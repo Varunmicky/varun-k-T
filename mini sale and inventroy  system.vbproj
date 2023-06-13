@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C2579F3E-B7D2-4CAE-8E5D-DF635A281535}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>mini_sale_and_inventroy__system.mini</StartupObject>
+    <RootNamespace>mini_sale_and_inventroy__system</RootNamespace>
+    <AssemblyName>mini sale and inventroy  system</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>mini sale and inventroy  system.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>mini sale and inventroy  system.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dashboard.Designer.vb">
+      <DependentUpon>dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgotpassword.Designer.vb">
+      <DependentUpon>forgotpassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forgotpassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mini.Designer.vb">
+      <DependentUpon>mini.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mini.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="purchasehistory.Designer.vb">
+      <DependentUpon>purchasehistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="purchasehistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home.Designer.vb">
+      <DependentUpon>home.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="purchasereport.Designer.vb">
+      <DependentUpon>purchasereport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="purchasereport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reg.Designer.vb">
+      <DependentUpon>reg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salesreport.Designer.vb">
+      <DependentUpon>salesreport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="salesreport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatestock.Designer.vb">
+      <DependentUpon>updatestock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="updatestock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="neworderpurchasevb.Designer.vb">
+      <DependentUpon>neworderpurchasevb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="neworderpurchasevb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="payments.Designer.vb">
+      <DependentUpon>payments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="payments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pphistory.Designer.vb">
+      <DependentUpon>pphistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pphistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="purchase.Designer.vb">
+      <DependentUpon>purchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="purchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="purchasereturn.Designer.vb">
+      <DependentUpon>purchasereturn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="purchasereturn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reports.Designer.vb">
+      <DependentUpon>reports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sales.Designer.vb">
+      <DependentUpon>sales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="saleshistory.Designer.vb">
+      <DependentUpon>saleshistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="saleshistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newsalesorder.Designer.vb">
+      <DependentUpon>newsalesorder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="newsalesorder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newpayment.Designer.vb">
+      <DependentUpon>newpayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="newpayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salesreturn.Designer.vb">
+      <DependentUpon>salesreturn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="salesreturn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sphistory.Designer.vb">
+      <DependentUpon>sphistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sphistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stock.Designer.vb">
+      <DependentUpon>stock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgotpassword.resx">
+      <DependentUpon>forgotpassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mini.resx">
+      <DependentUpon>mini.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="purchasehistory.resx">
+      <DependentUpon>purchasehistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home.resx">
+      <DependentUpon>home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="purchasereport.resx">
+      <DependentUpon>purchasereport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reg.resx">
+      <DependentUpon>reg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salesreport.resx">
+      <DependentUpon>salesreport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatestock.resx">
+      <DependentUpon>updatestock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="neworderpurchasevb.resx">
+      <DependentUpon>neworderpurchasevb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payments.resx">
+      <DependentUpon>payments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pphistory.resx">
+      <DependentUpon>pphistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="purchase.resx">
+      <DependentUpon>purchase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="purchasereturn.resx">
+      <DependentUpon>purchasereturn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports.resx">
+      <DependentUpon>reports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sales.resx">
+      <DependentUpon>sales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="saleshistory.resx">
+      <DependentUpon>saleshistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newsalesorder.resx">
+      <DependentUpon>newsalesorder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newpayment.resx">
+      <DependentUpon>newpayment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salesreturn.resx">
+      <DependentUpon>salesreturn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sphistory.resx">
+      <DependentUpon>sphistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stock.resx">
+      <DependentUpon>stock.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purcahse logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saleslogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventory logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin login.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchaselogo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchasereturn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salelogo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\historylogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ordersale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salesreturnlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hs1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stockupdatelogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salespay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purcahsepay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salesreport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchasereport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stockreport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jarvis2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stockreport1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sales2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stocklogo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uwp1543860 - Copy.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1828786.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1828802.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\18287861.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mini.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uwp1543860.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
